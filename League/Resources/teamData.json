@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Bayern Munich"
+        "position": 1
+        "wins": 15
+        "draws": 2
+        "losses": 1
+        "points": 47
+        "GP": 18
+    },
+    {
+        "name": "Manchester City"
+        "position": 2
+        "wins": 13
+        "draws": 2
+        "losses": 3
+        "points": 41
+        "GP": 18
+    }
+]
