@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+struct Team: Codable, Identifiable {
+    var id: Int
+    
+    var name: String
+    var position: Int
+    var wins: Int
+    var draws: Int
+    var losses: Int
+    var GP: Int
+}

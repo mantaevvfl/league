@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				3F2574C525AA20D9009BADF7 /* LeagueApp.swift */,
-				3F2574DB25AA2E7D009BADF7 /* Resources */,
 				3F2574D525AA2B5B009BADF7 /* Views */,
+				3F2574DB25AA2E7D009BADF7 /* Resources */,
 				3F2574E125AA33DC009BADF7 /* Model */,
 				3F2574C925AA20DC009BADF7 /* Assets.xcassets */,
 				3F2574CE25AA20DC009BADF7 /* Info.plist */,

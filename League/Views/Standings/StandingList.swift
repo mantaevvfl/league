@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct StandingList: View {
+    
+    
     var body: some View {
-        VStack {
-            Text("League")
-                .font(.title)
-                .bold()
-            
-            Spacer()
+        
+        NavigationView {
+            List() {
+            }
+            .navigationBarTitle("League")
         }
 
         
