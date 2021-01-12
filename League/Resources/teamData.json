@@ -1,52 +1,22 @@
 [
     {
-        "name": "FC Bayern Munich"
-        "id": 1005
-        "position": 1
-        "wins": 15
-        "draws": 2
-        "losses": 1
-        "points": 47
-        "GP": 18
+        "name": "Juventus",
+        "id": 1000,
+        "position": 1,
+        "wins": 32,
+        "draws": 14,
+        "losses": 10,
+        "points": 96,
+        "gp": 3
     },
     {
-        "name": "Chelsea F.C"
-        "id": 1006
-        "position": 2
-        "wins": 13
-        "draws": 2
-        "losses": 3
-        "points": 41
-        "GP": 18
-    },
-    {
-        "name": "Juventus F.C."
-        "id": 1007
-        "position": 3
-        "wins": 13
-        "draws": 0
-        "losses": 5
-        "points": 39
-        "GP": 18
-    }.
-    {
-        "name": "PSG F.C."
-        "id": 1008
-        "position": 4
-        "wins": 10
-        "draws": 5
-        "losses": 3
-        "points" 30
-        "GP": 18
-    },
-    {
-        "name": "Real Madrid C.F."
-        "id": 1009
-        "position": 5
-        "wins": 9
-        "draws": 6
-        "losses": 3
-        "points": 27
-        "GP": 18
+        "name": "Chelsea",
+        "id": 1001,
+        "position": 3,
+        "wins": 14,
+        "draws": 3,
+        "losses": 4,
+        "points": 42,
+        "gp": 4
     }
 ]

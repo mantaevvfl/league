@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-struct Team: Codable, Identifiable {
+struct Team: Hashable, Codable, Identifiable {
     var id: Int
     
     var name: String
@@ -16,5 +15,6 @@ struct Team: Codable, Identifiable {
     var wins: Int
     var draws: Int
     var losses: Int
-    var GP: Int
+    var points: Int
+    var gp: Int
 }

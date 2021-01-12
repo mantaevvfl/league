@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 var teams: [Team] = load("teamData.json")
 
 // Loading data from a JSON file
 func load<T: Decodable>(_ filename: String) -> T {
-    var data: Data
+    let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
     else {
@@ -26,7 +27,8 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
     
     do {
-        return try JSONDecoder().decode(T.self, from: data)
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
     }
     catch {
         fatalError("Couldn't parse data from \(filename) as \(T.self):\n\(error)")

@@ -8,25 +8,15 @@
 import SwiftUI
 
 struct StandingList: View {
-    
+    var team: Team
     
     var body: some View {
-        
-        NavigationView {
-            List() {
-            }
-            .navigationBarTitle("League")
-        }
-
-        
-        
-        
-
+        Text(team.name)
     }
 }
 
 struct StandingList_Previews: PreviewProvider {
     static var previews: some View {
-        StandingList()
+        StandingList(team: teams[1])
     }
 }
