@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct StandingList: View {
-    var team: Team
+    var teams: [Team]
     
     var body: some View {
-        Text(team.name)
+        NavigationView {
+            List(teams, id: \.id) {team in
+                Text(team.name)
+            }
+            .navigationTitle("League")
+        }
     }
 }
 
 struct StandingList_Previews: PreviewProvider {
     static var previews: some View {
-        StandingList(team: teams[1])
+        StandingList(teams: filteredTeams)
     }
 }

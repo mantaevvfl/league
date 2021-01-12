@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 var teams: [Team] = load("teamData.json")
+var filteredTeams: [Team] = teams.sorted(by: {$0.position < $1.position})
 
 // Loading data from a JSON file
 func load<T: Decodable>(_ filename: String) -> T {

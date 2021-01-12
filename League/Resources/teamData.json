@@ -7,7 +7,7 @@
         "draws": 14,
         "losses": 10,
         "points": 96,
-        "gp": 3
+        "gp": 18
     },
     {
         "name": "Chelsea",
@@ -17,6 +17,16 @@
         "draws": 3,
         "losses": 4,
         "points": 42,
-        "gp": 4
+        "gp": 18
+    },
+    {
+        "name": "Paris Saint-Germain",
+        "id": 1002,
+        "position": 2,
+        "wins": 20,
+        "draws": 3,
+        "losses": 4,
+        "points": 60,
+        "gp": 18
     }
 ]
