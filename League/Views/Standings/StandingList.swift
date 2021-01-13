@@ -9,13 +9,22 @@ import SwiftUI
 
 struct StandingList: View {
     var teams: [Team]
+    @State var showingProfile: Bool = false
     
     var body: some View {
         NavigationView {
-            List(teams, id: \.id) {team in
-                Text(team.name)
+            List {
+                ForEach(teams, id: \.id) {team in
+                    StandingRow(team: team)
+                }
             }
             .navigationTitle("League")
+            .toolbar {
+                Button(action: {showingProfile.toggle()}) {
+                    Image(systemName: "person.crop.circle")
+                        .accessibilityLabel("User Profile")
+                }
+            }
         }
     }
 }
