@@ -2,31 +2,37 @@
     {
         "name": "Juventus",
         "id": 1000,
+        "league": "Serie A",
         "position": 1,
         "wins": 32,
         "draws": 14,
-        "losses": 10,
-        "points": 96,
-        "gp": 18
+        "losses": 10
     },
     {
         "name": "Chelsea",
         "id": 1001,
+        "league": "Premier League",
         "position": 3,
         "wins": 14,
         "draws": 3,
-        "losses": 4,
-        "points": 42,
-        "gp": 18
+        "losses": 4
     },
     {
         "name": "PSG",
         "id": 1002,
+        "league": "Ligue 1",
         "position": 2,
         "wins": 20,
         "draws": 3,
-        "losses": 4,
-        "points": 60,
-        "gp": 18
+        "losses": 4
+    },
+    {
+        "name": "Bayern Munich",
+        "id": 1003,
+        "league": "Bundesliga",
+        "position": 1,
+        "wins": 29,
+        "draws": 2,
+        "losses": 0
     }
 ]

@@ -13,16 +13,20 @@ struct StandingList: View {
     
     var body: some View {
         NavigationView {
-            List {
+            List
+            {
                 ForEach(teams, id: \.id) {team in
-                    StandingRow(team: team)
-                }
+                        NavigationLink(destination: StandingDetail(team: team, matches: matches)) {
+                            StandingRow(team: team)
+                        }
+                        
+                    }
             }
-            .navigationTitle("League")
+            .navigationTitle("Clubs")
             .toolbar {
                 Button(action: {showingProfile.toggle()}) {
-                    Image(systemName: "person.crop.circle")
-                        .accessibilityLabel("User Profile")
+                        Image(systemName: "person.crop.circle")
+                            .accessibilityLabel("User Profile")
                 }
             }
         }

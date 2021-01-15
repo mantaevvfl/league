@@ -11,21 +11,17 @@ struct StandingRow: View {
     var team: Team
     
     var body: some View {
-        HStack(spacing: 10) {
+        VStack(alignment: .leading) {
             Text(team.name)
-            Spacer()
-            Text("\(team.wins)")
-            Text("\(team.draws)")
-            Text("\(team.losses)")
-            Text("\(team.gp)")
-            Text("\(team.points)").bold()
+            Text("\(team.league)")
+                .foregroundColor(Color.gray)
         }
     }
 }
 
 struct StandingRow_Previews: PreviewProvider {
     static var previews: some View {
-        StandingRow(team: filteredTeams[0])
+        StandingRow(team: filteredTeams[1])
             .previewLayout(.fixed(width: 500, height: 80))
         
     }

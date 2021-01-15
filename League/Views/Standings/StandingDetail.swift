@@ -14,7 +14,7 @@ struct StandingDetail: View {
     var matchesPlayed: [Match] {
         matches.filter {(match: Match) in match.homeTeam == team.name || match.awayTeam == team.name}
     }
-    
+        
     var homeWins: [Match] {
         matchesPlayed.filter {(match: Match) in
             match.homeTeam == team.name && match.result[0] > match.result[1]
