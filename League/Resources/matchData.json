@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "date": "Sat, Dec 16",
+        "homeTeam": "PSG",
+        "awayTeam": "Chelsea",
+        "result": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": 2,
+        "date": "Sat, Dec 23",
+        "homeTeam": "Juventus",
+        "awayTeam": "Chelsea",
+        "result": [
+            2,
+            2
+        ]
+    },
+    {
+        "id": 3,
+        "date": "Sat, Dec 30",
+        "homeTeam": "Chelsea",
+        "awayTeam": "PSG",
+        "result": [
+            4,
+            1
+        ]
+    }
+]

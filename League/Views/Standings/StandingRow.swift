@@ -19,7 +19,6 @@ struct StandingRow: View {
             Text("\(team.losses)")
             Text("\(team.gp)")
             Text("\(team.points)").bold()
-
         }
     }
 }
