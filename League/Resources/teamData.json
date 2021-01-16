@@ -34,5 +34,95 @@
         "wins": 29,
         "draws": 2,
         "losses": 0
+    },
+    {
+        "name": "Real Madrid",
+        "id": 1004,
+        "league": "La Liga",
+        "position": 4,
+        "wins": 20,
+        "draws": 8,
+        "losses": 4
+    },
+    {
+        "name": "Liverpool",
+        "id": 1005,
+        "league": "Premier League",
+        "position": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1
+    },
+    {
+        "name": "Barcelona",
+        "id": 1006,
+        "league": "La Liga",
+        "position": 2,
+        "wins": 2,
+        "draws": 1,
+        "losses": 1
+    },
+    {
+        "name": "BVB Dortmund",
+        "id": 1007,
+        "league": "Bundesliga",
+        "position": 3,
+        "wins": 5,
+        "draws": 1,
+        "losses": 2
+    },
+    {
+        "name": "Manchester City",
+        "id": 1008,
+        "league": "Premier League",
+        "position": 4,
+        "wins": 20,
+        "draws": 5,
+        "losses": 3
+    },
+    {
+        "name": "Athletico Madrid",
+        "id": 1009,
+        "league": "La Liga",
+        "position": 6,
+        "wins": 15,
+        "draws": 5,
+        "losses": 1
+    },
+    {
+        "name": "Manchester United",
+        "id": 1010,
+        "league": "Premier League",
+        "position": 5,
+        "wins": 2,
+        "draws": 1,
+        "losses": 1
+    },
+    {
+        "name": "Olympique Lyon",
+        "id": 1011,
+        "league": "Ligue 1",
+        "position": 4,
+        "wins": 5,
+        "draws": 1,
+        "losses": 0
+    },
+    {
+        "name": "Ajax",
+        "id": 1012,
+        "league": "Eredivisie",
+        "position": 1,
+        "wins": 12,
+        "draws": 2,
+        "losses": 1
+    },
+    {
+        "name": "Inter Milan",
+        "id": 1013,
+        "league": "Serie A",
+        "position": 3,
+        "wins": 15,
+        "draws": 10,
+        "losses": 4
     }
 ]
