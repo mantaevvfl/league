@@ -10,7 +10,8 @@ import Combine
 
 var teams: [Team] = load("teamData.json")
 var matches: [Match] = load("matchData.json")
-var filteredTeams: [Team] = teams.sorted(by: {(t1: Team, t2: Team) in t1.position < t2.position}) // Change to points later
+var filteredTeams: [Team] = teams.sorted(by: {(t1: Team, t2: Team) in t1.position < t2.position})
+var profile = Profile.default
 
 // Loading data from a JSON file
 func load<T: Decodable>(_ filename: String) -> T {

@@ -9,7 +9,7 @@ import Foundation
 
 struct Profile {
     var username: String
-    var notificationsEnabled: Bool = true
+    var notifications: Bool = true
     var description: Trait = Trait.fanatic
     var favoriteTeam: String = teams[0].name
     
