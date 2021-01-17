@@ -28,6 +28,9 @@ struct StandingList: View {
                         Image(systemName: "person.crop.circle")
                             .accessibilityLabel("User Profile")
                 }
+                .sheet(isPresented: $showingProfile) {
+                    ProfileHost()
+                }
             }
         }
     }
