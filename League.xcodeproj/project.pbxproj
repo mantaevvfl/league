@@ -16,6 +16,7 @@
 		3F2574DD25AA2EE1009BADF7 /* teamData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F2574DC25AA2EE1009BADF7 /* teamData.json */; };
 		3F2574E325AA33FE009BADF7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2574E225AA33FE009BADF7 /* ModelData.swift */; };
 		3F2574E725AA3541009BADF7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2574E625AA3541009BADF7 /* Team.swift */; };
+		3F6E996125B37FBF00651ED1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E996025B37FBF00651ED1 /* Profile.swift */; };
 		3F9B1FE825AE87DA0017A7A0 /* StandingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B1FE725AE87DA0017A7A0 /* StandingDetail.swift */; };
 		3F9C620225AE693900B6593D /* StandingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C620125AE693900B6593D /* StandingRow.swift */; };
 		3F9F7CB125B0DFE800E84422 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F7CB025B0DFE800E84422 /* Match.swift */; };
@@ -33,6 +34,7 @@
 		3F2574DC25AA2EE1009BADF7 /* teamData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teamData.json; sourceTree = "<group>"; };
 		3F2574E225AA33FE009BADF7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3F2574E625AA3541009BADF7 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3F6E996025B37FBF00651ED1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3F9B1FE725AE87DA0017A7A0 /* StandingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingDetail.swift; sourceTree = "<group>"; };
 		3F9C620125AE693900B6593D /* StandingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingRow.swift; sourceTree = "<group>"; };
 		3F9F7CB025B0DFE800E84422 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				3F2574E225AA33FE009BADF7 /* ModelData.swift */,
 				3F2574E625AA3541009BADF7 /* Team.swift */,
 				3F9F7CB025B0DFE800E84422 /* Match.swift */,
+				3F6E996025B37FBF00651ED1 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				3F2574C625AA20D9009BADF7 /* LeagueApp.swift in Sources */,
 				3F2574E725AA3541009BADF7 /* Team.swift in Sources */,
 				3F9B1FE825AE87DA0017A7A0 /* StandingDetail.swift in Sources */,
+				3F6E996125B37FBF00651ED1 /* Profile.swift in Sources */,
 				3F2574D825AA2C0B009BADF7 /* StandingList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
