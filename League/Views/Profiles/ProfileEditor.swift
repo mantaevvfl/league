@@ -21,14 +21,14 @@ struct ProfileEditor: View {
             HStack {
                 Text("Favourite Team")
                 Divider()
-                TextField("Favourite Team", text: $profile.favouriteTeam)
+                TextField("Team", text: $profile.favouriteTeam)
             }
             Toggle(isOn: $profile.notifications) {
                 Text("Enable Notifications")
             }
             Picker("Describe Yourself", selection: $profile.description) {
                 ForEach(Profile.Trait.allCases) {trait in
-                    Text(trait.rawValue)
+                    Text(trait.rawValue).tag(trait)
                 }
             }
             .pickerStyle(SegmentedPickerStyle())

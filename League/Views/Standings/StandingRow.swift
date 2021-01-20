@@ -9,10 +9,11 @@ import SwiftUI
 
 struct StandingRow: View {
     var team: Team
+    var profile = Profile.default
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(team.name)
+            profile.favouriteTeam == team.name ? Text(team.name).bold() : Text(team.name)
             Text("\(team.league)")
                 .foregroundColor(Color.gray)
         }
@@ -21,7 +22,7 @@ struct StandingRow: View {
 
 struct StandingRow_Previews: PreviewProvider {
     static var previews: some View {
-        StandingRow(team: filteredTeams[1])
+        StandingRow(team: filteredTeams[0])
             .previewLayout(.fixed(width: 500, height: 80))
         
     }
