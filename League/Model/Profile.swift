@@ -11,7 +11,7 @@ struct Profile {
     var username: String
     var notifications: Bool = true
     var description: Trait = Trait.fanatic
-    var favoriteTeam: String = teams[0].name
+    var favouriteTeam: String = teams[0].name
     
     // Create a default profile for testing purposes
     static let `default` = Profile(username: "mantaev.vfl")

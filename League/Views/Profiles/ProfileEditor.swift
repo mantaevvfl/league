@@ -9,14 +9,36 @@ import SwiftUI
 
 struct ProfileEditor: View {
     
+    @Binding var profile: Profile
     
     var body: some View {
-        Text("Hello World!")
+        List {
+            HStack {
+                Text("Username")
+                Divider()
+                TextField("Username", text: $profile.username)
+            }
+            HStack {
+                Text("Favourite Team")
+                Divider()
+                TextField("Favourite Team", text: $profile.favouriteTeam)
+            }
+            Toggle(isOn: $profile.notifications) {
+                Text("Enable Notifications")
+            }
+            Picker("Describe Yourself", selection: $profile.description) {
+                ForEach(Profile.Trait.allCases) {trait in
+                    Text(trait.rawValue)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            
+        }
     }
 }
 
 struct ProfileEditor_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileEditor()
+        ProfileEditor(profile: .constant(Profile.default))
     }
 }

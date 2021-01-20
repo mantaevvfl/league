@@ -9,28 +9,26 @@ import SwiftUI
 
 struct ProfileSummary: View {
     
-    var profile = Profile.default
+    var profile: Profile
     
     var body: some View {
-        ScrollView {
+        
+        VStack(spacing: 15) {
+                
+            Text(profile.username)
+                .font(.title)
+                .bold()
             
-            VStack(alignment: .leading, spacing: 15) {
-                
-                Text(profile.username)
-                    .font(.title)
-                    .bold()
-                
-                Text("Favorite Team: \(profile.favoriteTeam)")
-                Text("Notifcations: \(profile.notifications ? "On" : "Off")")
-                Text("Describe Yourself: \(profile.description.rawValue)")
-                
-            }
+            Text("Favourite Team: \(profile.favouriteTeam)")
+            Text("Notifcations: \(profile.notifications ? "On" : "Off")")
+            Text("Describe Yourself: \(profile.description.rawValue)")
+            
         }
     }
 }
 
 struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileSummary()
+        ProfileSummary(profile: Profile.default)
     }
 }
