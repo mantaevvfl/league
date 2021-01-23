@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct StandingList: View {
-    var teams: [Team]
-    @State var showingProfile: Bool = false
+    @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile: Bool = false
+    
+    var teamsSorted: [Team] {
+        modelData.teams.sorted(by: {(t1: Team, t2: Team) in
+            t1.position < t2.position
+        })
+    }
     
     var body: some View {
         NavigationView {
             List
             {
-                ForEach(teams, id: \.id) {team in
-                        NavigationLink(destination: StandingDetail(team: team, matches: matches)) {
+                ForEach(teamsSorted, id: \.id) {team in
+                    NavigationLink(destination: StandingDetail(team: team, matches: modelData.matches)) {
                             StandingRow(team: team)
                         }
                         
@@ -38,6 +44,7 @@ struct StandingList: View {
 
 struct StandingList_Previews: PreviewProvider {
     static var previews: some View {
-        StandingList(teams: filteredTeams)
+        StandingList()
+            .environmentObject(ModelData())
     }
 }

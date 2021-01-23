@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StandingRow: View {
     var team: Team
-    var profile = Profile.default
+    var profile: Profile = Profile.default
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,9 +20,9 @@ struct StandingRow: View {
     }
 }
 
-struct StandingRow_Previews: PreviewProvider {
+struct StandingRow_Previews: PreviewProvider {    
     static var previews: some View {
-        StandingRow(team: filteredTeams[0])
+        StandingRow(team: ModelData().teams[1])
             .previewLayout(.fixed(width: 500, height: 80))
         
     }

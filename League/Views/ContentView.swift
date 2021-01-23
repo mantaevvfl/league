@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
     var body: some View {
-        StandingList(teams: teams)
+        StandingList()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }

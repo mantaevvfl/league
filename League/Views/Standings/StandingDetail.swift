@@ -11,18 +11,18 @@ struct StandingDetail: View {
     
     var team: Team
     var matches: [Match]
-    var matchesPlayed: [Match] {
+    var teamMatches: [Match] {
         matches.filter {(match: Match) in match.homeTeam == team.name || match.awayTeam == team.name}
     }
         
     var homeWins: [Match] {
-        matchesPlayed.filter {(match: Match) in
+        teamMatches.filter {(match: Match) in
             match.homeTeam == team.name && match.result[0] > match.result[1]
         }
     }
     
     var awayWins: [Match] {
-        matchesPlayed.filter {(match: Match) in
+        teamMatches.filter {(match: Match) in
             match.awayTeam == team.name && match.result[1] > match.result[0]
         }
     }
@@ -43,7 +43,7 @@ struct StandingDetail: View {
             Divider()
             
             ScrollView {
-                ForEach(matchesPlayed, id: \.id) {match in
+                ForEach(teamMatches, id: \.id) {match in
                     VStack {
                         Text(match.date)
                             .font(.headline)
@@ -65,7 +65,8 @@ struct StandingDetail: View {
 }
 
 struct StandingDetail_Previews: PreviewProvider {
+    
     static var previews: some View {
-        StandingDetail(team: filteredTeams[2], matches: matches)
+        StandingDetail(team: ModelData().teams[1], matches: ModelData().matches)
     }
 }

@@ -15,11 +15,12 @@ struct ProfileHost: View {
         
         VStack(spacing: 20) {
             HStack {
-                Button(action: {
-                    editMode?.wrappedValue = .inactive
-                })
-                {
-                    Text("Cancel")
+                if editMode?.wrappedValue == .active {
+                    Button(action: {
+                        editMode?.wrappedValue = .inactive
+                    }) {
+                        Text("Cancel")
+                    }
                 }
                 Spacer()
                 EditButton()
