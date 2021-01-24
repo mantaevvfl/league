@@ -24,6 +24,7 @@ struct StandingList: View {
                 ForEach(teamsSorted, id: \.id) {team in
                     NavigationLink(destination: StandingDetail(team: team, matches: modelData.matches)) {
                             StandingRow(team: team)
+                                .environmentObject(modelData)
                         }
                         
                     }

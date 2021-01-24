@@ -28,7 +28,7 @@ struct ProfileHost: View {
             }
             
             if editMode?.wrappedValue == .inactive {
-                ProfileSummary(profile: currentProfile)
+                ProfileSummary()
             }
             else {
                 ProfileEditor(profile: $currentProfile)
@@ -39,6 +39,7 @@ struct ProfileHost: View {
                     .onDisappear {
                         // Save changes made
                         modelData.profile = currentProfile
+                        currentProfile = modelData.profile
                     }
             }
         }
