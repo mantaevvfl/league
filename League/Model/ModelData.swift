@@ -11,6 +11,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var teams: [Team] = load("teamData.json") // Changes made to teams array have to be published to the subscribers
+    @Published var profile = Profile.default
     var matches: [Match] = load("matchData.json")
 }
 

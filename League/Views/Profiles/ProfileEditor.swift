@@ -14,24 +14,29 @@ struct ProfileEditor: View {
     var body: some View {
         List {
             HStack {
-                Text("Username")
+                Text("Username").bold()
                 Divider()
                 TextField("Username", text: $profile.username)
             }
             HStack {
-                Text("Favourite Team")
+                Text("Favourite Team").bold()
                 Divider()
                 TextField("Team", text: $profile.favouriteTeam)
             }
             Toggle(isOn: $profile.notifications) {
-                Text("Enable Notifications")
+                Text("Enable Notifications").bold()
             }
-            Picker("Describe Yourself", selection: $profile.description) {
-                ForEach(Profile.Trait.allCases) {trait in
-                    Text(trait.rawValue).tag(trait)
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Describe Yourself").bold()
+                
+                Picker("Describe Yourself", selection: $profile.description) {
+                    ForEach(Profile.Trait.allCases) {trait in
+                        Text(trait.rawValue).tag(trait)
+                    }
                 }
+                .pickerStyle(SegmentedPickerStyle())
             }
-            .pickerStyle(SegmentedPickerStyle())
+
             
         }
     }

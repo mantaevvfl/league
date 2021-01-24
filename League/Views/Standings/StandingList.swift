@@ -36,6 +36,7 @@ struct StandingList: View {
                 }
                 .sheet(isPresented: $showingProfile) {
                     ProfileHost()
+                        .environmentObject(modelData)
                 }
             }
         }
