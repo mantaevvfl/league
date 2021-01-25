@@ -13,7 +13,4 @@ struct Team: Hashable, Codable, Identifiable {
     var league: String
     var name: String
     var position: Int
-    var wins: Int
-    var draws: Int
-    var losses: Int
 }

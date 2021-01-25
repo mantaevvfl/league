@@ -1,31 +1,41 @@
 [
     {
         "id": 1,
-        "date": "Sat, Dec 16",
-        "homeTeam": "PSG",
-        "awayTeam": "Chelsea",
+        "date": "Wed, Aug 28",
+        "homeTeam": "Bayern Munich",
+        "awayTeam": "Hoffenheim",
         "result": [
-            0,
-            2
+            3,
+            1
         ]
     },
     {
         "id": 2,
-        "date": "Sat, Dec 23",
-        "homeTeam": "Juventus",
-        "awayTeam": "Chelsea",
+        "date": "Sun, Aug 26",
+        "homeTeam": "BVB Dortmund",
+        "awayTeam": "RB Leipzig",
         "result": [
-            2,
-            2
+            4,
+            1
         ]
     },
     {
         "id": 3,
-        "date": "Sat, Dec 30",
-        "homeTeam": "Chelsea",
-        "awayTeam": "PSG",
+        "date": "Sat, Sep 1",
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Bayern Munich",
         "result": [
-            4,
+            0,
+            3
+        ]
+    },
+    {
+        "id": 4,
+        "date": "Fri, Sep 14",
+        "homeTeam": "BVB Dortmund",
+        "awayTeam": "Ein Frankfurt",
+        "result": [
+            3,
             1
         ]
     }

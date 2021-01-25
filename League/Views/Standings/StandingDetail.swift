@@ -27,6 +27,18 @@ struct StandingDetail: View {
         }
     }
     
+    var teamDraws: [Match] {
+        teamMatches.filter {(match: Match) in
+            match.result[0] == match.result[1]
+        }
+    }
+    
+    var teamLosses: [Match] {
+        let otherMatches = homeWins + awayWins + teamDraws
+        return teamMatches.filter {(match: Match) in
+            !otherMatches.contains(match)
+        }
+    }
     
     var body: some View {
         VStack {
@@ -34,9 +46,9 @@ struct StandingDetail: View {
                 .font(.title)
                 .bold()
             HStack(spacing: 20) {
-                Text("W: \(team.wins)")
-                Text("D: \(team.draws)")
-                Text("L: \(team.losses)")
+                Text("W: \(homeWins.count + awayWins.count)")
+                Text("D: \(teamDraws.count)")
+                Text("L: \(teamLosses.count)")
             }
             .font(.subheadline)
             
