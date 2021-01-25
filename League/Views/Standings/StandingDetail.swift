@@ -40,6 +40,11 @@ struct StandingDetail: View {
         }
     }
     
+    var totalPoints: Int {
+        (homeWins + awayWins).count * 3 + teamDraws.count
+    }
+    
+    
     var body: some View {
         VStack {
             Text(team.name)
@@ -61,15 +66,20 @@ struct StandingDetail: View {
                             .font(.headline)
                         HStack {
                             Text("\(match.homeTeam)")
+                                .frame(width: 150)
                             HStack {
                                 homeWins.contains(match) ? Text("\(match.result[0])").bold() : Text("\(match.result[0])")
                                 Text("-")
                                 awayWins.contains(match) ? Text("\(match.result[1])").bold() : Text("\(match.result[1])")
                             }
+                            .frame(width: 75)
                             Text("\(match.awayTeam)")
+                                .frame(width: 150)
                         }
+                        .padding()
                     }
                     .padding()
+                    
                 }
             }
         }
@@ -79,6 +89,6 @@ struct StandingDetail: View {
 struct StandingDetail_Previews: PreviewProvider {
     
     static var previews: some View {
-        StandingDetail(team: ModelData().teams[1], matches: ModelData().matches)
+        StandingDetail(team: ModelData().teams[3], matches: ModelData().matches)
     }
 }

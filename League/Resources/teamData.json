@@ -3,19 +3,19 @@
         "name": "Juventus",
         "id": 1000,
         "league": "Serie A",
-        "position": 1
+        "position": 2
     },
     {
         "name": "Chelsea",
         "id": 1001,
         "league": "Premier League",
-        "position": 3
+        "position": 4
     },
     {
         "name": "PSG",
         "id": 1002,
         "league": "Ligue 1",
-        "position": 2
+        "position": 3
     },
     {
         "name": "Bayern Munich",
@@ -27,25 +27,25 @@
         "name": "Real Madrid",
         "id": 1004,
         "league": "La Liga",
-        "position": 4
+        "position": 3
     },
     {
         "name": "Liverpool",
         "id": 1005,
         "league": "Premier League",
-        "position": 3
+        "position": 6
     },
     {
         "name": "Barcelona",
         "id": 1006,
         "league": "La Liga",
-        "position": 2
+        "position": 1
     },
     {
         "name": "BVB Dortmund",
         "id": 1007,
         "league": "Bundesliga",
-        "position": 3
+        "position": 4
     },
     {
         "name": "Manchester City",
@@ -57,19 +57,19 @@
         "name": "Athletico Madrid",
         "id": 1009,
         "league": "La Liga",
-        "position": 6
+        "position": 5
     },
     {
         "name": "Manchester United",
         "id": 1010,
         "league": "Premier League",
-        "position": 5
+        "position": 3
     },
     {
         "name": "Olympique Lyon",
         "id": 1011,
         "league": "Ligue 1",
-        "position": 4
+        "position": 7
     },
     {
         "name": "Ajax",
@@ -81,6 +81,6 @@
         "name": "Inter Milan",
         "id": 1013,
         "league": "Serie A",
-        "position": 3
+        "position": 2
     }
 ]

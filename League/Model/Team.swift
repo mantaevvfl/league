@@ -9,7 +9,6 @@ import Foundation
 
 struct Team: Hashable, Codable, Identifiable {
     var id: Int
-    
     var league: String
     var name: String
     var position: Int
