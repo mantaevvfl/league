@@ -78,7 +78,6 @@
 			children = (
 				3F2574C525AA20D9009BADF7 /* LeagueApp.swift */,
 				3F2574D525AA2B5B009BADF7 /* Views */,
-				3F9AF0B525B149B60026723F /* Helpers */,
 				3F2574DB25AA2E7D009BADF7 /* Resources */,
 				3F2574E125AA33DC009BADF7 /* Model */,
 				3F2574C925AA20DC009BADF7 /* Assets.xcassets */,
@@ -134,13 +133,6 @@
 				3F6E996025B37FBF00651ED1 /* Profile.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		3F9AF0B525B149B60026723F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3FA3F0CF25B3CC2B0099E0CA /* Profiles */ = {

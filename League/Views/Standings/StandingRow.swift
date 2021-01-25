@@ -13,7 +13,10 @@ struct StandingRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            modelData.profile.favouriteTeam == team.name ? Text(team.name).bold() : Text(team.name)
+            HStack {
+                Text(team.name)
+                if modelData.profile.favouriteTeam == team.name {Image(systemName: "star.fill").foregroundColor(Color.yellow)}
+            }
             Text("\(team.league)")
                 .foregroundColor(Color.gray)
         }
