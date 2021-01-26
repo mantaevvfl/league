@@ -68,7 +68,7 @@ struct StandingDetail: View {
                     VStack {
                         Text(match.date)
                             .font(.headline)
-                            .frame(width: 100)
+                            .frame(width: 150)
                         HStack {
                             Text("\(match.homeTeam)")
                                 .frame(width: 120)
@@ -94,6 +94,6 @@ struct StandingDetail: View {
 struct StandingDetail_Previews: PreviewProvider {
     
     static var previews: some View {
-        StandingDetail(team: ModelData().teams[8], matches: ModelData().matches)
+        StandingDetail(team: ModelData().teams[10], matches: ModelData().matches)
     }
 }
