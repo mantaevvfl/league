@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "date": "Wed, Aug 28",
+        "date": "Fri, Aug 24",
         "homeTeam": "Bayern Munich",
         "awayTeam": "Hoffenheim",
         "result": [
@@ -57,6 +57,127 @@
         "result": [
             1,
             1
+        ]
+    },
+    {
+        "id": 7,
+        "date": "Fri, Aug 10",
+        "homeTeam": "Manchester United",
+        "awayTeam": "Leicester City",
+        "result": [
+            2,
+            1
+        ]
+        
+    },
+    {
+        "id": 8,
+        "date": "Sat, Aug 11",
+        "homeTeam": "Huddersfield",
+        "awayTeam": "Chelsea",
+        "result": [
+            0,
+            3
+        ]
+    },
+    {
+        "id": 9,
+        "date": "Sun, Aug 12",
+        "homeTeam": "Arsenal",
+        "awayTeam": "Manchester City",
+        "result": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": 10,
+        "date": "Sun, Aug 12",
+        "homeTeam": "Liverpool",
+        "awayTeam": "West Ham",
+        "result": [
+            4,
+            0
+        ]
+    },
+    {
+        "id": 11,
+        "date": "Sat, Aug 18",
+        "homeTeam": "Chelsea",
+        "awayTeam": "Arsenal",
+        "result": [
+            3,
+            2
+        ]
+    },
+    {
+        "id": 12,
+        "date": "Sun, Aug 19",
+        "homeTeam": "Brighton",
+        "awayTeam": "Manchester United",
+        "result": [
+            3,
+            2
+        ]
+    },
+    {
+        "id": 13,
+        "date": "Sun, Aug 19",
+        "homeTeam": "Manchester City",
+        "awayTeam": "Huddersfield",
+        "result": [
+            6,
+            1
+        ]
+    },
+    {
+        "id": 14,
+        "date": "Mon, Aug 20",
+        "homeTeam": "Crystal Palace",
+        "awayTeam": "Liverpool",
+        "result": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": 15,
+        "date": "Sat, Aug 25",
+        "homeTeam": "Liverpool",
+        "awayTeam": "Brighton",
+        "result": [
+            1,
+            0
+        ]
+    },
+    {
+        "id": 16,
+        "date": "Sat, Aug 25",
+        "homeTeam": "Wolves",
+        "awayTeam": "Manchester City",
+        "result": [
+            1,
+            1
+        ]
+    },
+    {
+        "id": 17,
+        "date": "Sun, Aug 26",
+        "homeTeam": "Newcastle",
+        "awayTeam": "Chelsea",
+        "result": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 18,
+        "date": "Mon, Aug 27",
+        "homeTeam": "Manchester United",
+        "awayTeam": "Tottenham",
+        "result": [
+            0,
+            3
         ]
     }
 ]

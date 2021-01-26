@@ -56,6 +56,10 @@ struct StandingDetail: View {
                 Text("L: \(teamLosses.count)")
             }
             .font(.subheadline)
+            Text("\(team.league)")
+                .foregroundColor(Color.gray)
+                .font(.caption)
+            
             
             Divider()
             
@@ -64,9 +68,10 @@ struct StandingDetail: View {
                     VStack {
                         Text(match.date)
                             .font(.headline)
+                            .frame(width: 100)
                         HStack {
                             Text("\(match.homeTeam)")
-                                .frame(width: 150)
+                                .frame(width: 120)
                             HStack {
                                 homeWins.contains(match) ? Text("\(match.result[0])").bold() : Text("\(match.result[0])")
                                 Text("-")
@@ -74,7 +79,7 @@ struct StandingDetail: View {
                             }
                             .frame(width: 75)
                             Text("\(match.awayTeam)")
-                                .frame(width: 150)
+                                .frame(width: 120)
                         }
                         .padding()
                     }
@@ -89,6 +94,6 @@ struct StandingDetail: View {
 struct StandingDetail_Previews: PreviewProvider {
     
     static var previews: some View {
-        StandingDetail(team: ModelData().teams[3], matches: ModelData().matches)
+        StandingDetail(team: ModelData().teams[8], matches: ModelData().matches)
     }
 }
